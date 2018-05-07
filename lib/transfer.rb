@@ -28,6 +28,6 @@ class Transfer
    end
  
    def reverse_transfer
-      self.void
+      sender.balance << execute_transaction
    end
 end
