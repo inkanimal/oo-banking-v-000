@@ -10,7 +10,6 @@ class Transfer
     @amount = transfer_amount
   end
    
-  #checks sender & receiver bank_accounts?
   def valid?
     sender.valid? && receiver.valid? && sender.balance > self.amount
   end
